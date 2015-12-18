@@ -46,9 +46,9 @@ You will also will want to have a mixins file where you can reuse functions that
 
 #### LOC Naming Conventions
 LOC has a simple set of rules to follow that allows developers to pick up quite quickly to use.
--- A parent can only be applied 2 deep in HTML markup children; like parent -> direct decendant -> direct decendant's child. This helps cut down on the bulk and overuse of class tree fluff
--- A new feature class must always denote the level in which it is being invoked withing the markup; like is it global(g), flow specific(f), or flow-module(fm)
--- CSS/SCSS/LESS file structure needs to be broken out into partials resembling parent-level structure
+- A parent can only be applied 2 deep in HTML markup children; like parent -> direct decendant -> direct decendant's child. This helps cut down on the bulk and overuse of class tree fluff
+- A new feature class must always denote the level in which it is being invoked withing the markup; like is it global(g), flow specific(f), or flow-module(fm)
+- CSS/SCSS/LESS file structure needs to be broken out into partials resembling parent-level structure
 
 ##### Global Level:
 Examples: navigation, sidemenu, content containers, layout boxes used across the site
