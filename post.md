@@ -1,5 +1,5 @@
 #### Origin of LOC
-There is a lot of crap out there on how to build your own internal framewowrk for the UI. I don't find it to be beneficial to create everything on your own, but it is cool if you do. I know there are some methodologies out there for CSS like BEM, but honestly I kind of got tired of trying to sort through a massive amount of CSS on enterprize framworks trying to clean up or refactor a website; so I came up with my own called "LOC".
+There is a lot of crap out there on how to build your own internal framewowrk for the UI. I don't find it to be beneficial to create everything on your own, but it is cool if you do. I know there are some methodologies out there for CSS like BEM, but honestly I kind of got tired of trying to sort through a massive amount of CSS on enterprise framworks trying to clean up or refactor a website; so I came up with my own called "LOC".
 
 LOC stands for Level-Object-Component CSS naming conventions. The benefit of this is where you can look at a template and know how the styles are being applied; like is it on a global scale or flow specific area. It help resolve several issue among a development team:
 
