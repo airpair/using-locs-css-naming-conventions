@@ -84,7 +84,7 @@ A flow specific item would be like a widget or something. For exmaple, lets say 
         background: $brand_color;
     
         /* Denoted with "_" to show it is a child of the "tweet" parent
-         * _tweet-box0: direct decendant of parent (children)
+         * _tweet-box0: direct decendant of parent (child)
          ******************************************************************** */
         & ._tweet-box0{
             border: 1px solid $border_radius01;
