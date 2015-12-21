@@ -106,7 +106,7 @@ A flow specific item would be like a widget or something. For exmaple, lets say 
 #### 5. HTML Preview of LOC
 If you notice, inside of an HTML document you should be able to trace back to the parent, and know where the CSS group is written.
 
-```
+```markup
     <!-- Global Reusable Box Layout Component -->
     <div class="g-box01">
     
