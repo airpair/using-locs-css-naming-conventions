@@ -1,4 +1,4 @@
-#### Origin of LOC
+#### 1. Origin of LOC
 There is a lot of crap out there on how to build your own internal framework for the UI. I don't find it to be beneficial to create everything on your own, but it is cool if you do. I know there are some methodologies out there for CSS like BEM, but honestly I kind of got tired of sorting through a massive amount of enterprise css framworks on consulting projects; so I came up with my own css naming convention called "LOC".
 
 LOC stands for Level-Object-Component, and is a pretty flexible CSS naming convention. The benefit of LOC is where you can look at a template and know how the styles are being applied; like is it on a global scale or flow specific area. It help resolve several issue among a development team:
@@ -8,7 +8,7 @@ LOC stands for Level-Object-Component, and is a pretty flexible CSS naming conve
  - Faster Agile development of new and older features through tracing styles back to files without having to search
  - Creating reusable code that helps cut down on file size, and how much to maintain during development
 
-#### Setting Up SCSS Config File:
+#### 2. Setting Up SCSS Config File:
 When creating your own internal CSS responsive framework it is smart to have a file that controls the entire theme of the application; like font styles, layout backgrounds, borders, and branding specific themes. This will provide great diversity in your development where you can restructure things on the fly without any headaches of tracking down crap.
 
 ```scss
@@ -44,19 +44,19 @@ $layout_color04: #aaa;
 ```
 You will also will want to have a mixins file where you can reuse functions that are explicit to your application; like margins, padding, and creating widget bodies.
 
-#### LOC Naming Conventions
+#### 3. LOC Naming Conventions
 LOC has a simple set of rules to follow that allows developers to pick up quite quickly to use.
 - A parent can only be applied 2 deep in HTML markup children; like parent -> direct decendant -> direct decendant's child. This helps cut down on the bulk and overuse of class tree fluff
 - A new feature class must always denote the level in which it is being invoked withing the markup; like is it global(g), flow specific(f), or flow-module(fm)
 - CSS/SCSS/LESS file structure needs to be broken out into partials resembling parent-level structure
 
-##### Global Level:
+##### 4. Global Level:
 Examples: navigation, sidemenu, content containers, layout boxes used across the site
 
-##### Flow Specific: 
+##### 5. Flow Specific: 
 Marketing pages, product listing pages, contact us, and etc...
 
-##### Flow-Module:
+##### 6. Flow-Module:
 This will be content that resides within the flow pages; like a sells listing popup that only exist on the product listing pages
 
 
@@ -103,7 +103,7 @@ A flow specific item would be like a widget or something. For exmaple, lets say 
     }
 
 ```
-#### HTML Preview of LOC
+#### 7. HTML Preview of LOC
 If you notice, inside of an HTML document you should be able to trace back to the parent, and know where the CSS group is written.
 
 ```
