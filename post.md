@@ -71,7 +71,7 @@ This will be content that resides within the flow pages; like a sells listing po
 ```
 
 #### 4. Flow/ Module Specific Layout
-A flow specific item would be like a widget or something. For exmaple, lets say that you are developing a twitter feed to have on the front of your web application that displays the latest in what is trending.
+A flow specific item would be like a widget or something. For example, lets say that you are developing a twitter feed to have on the front of your web application that displays the latest in what is trending.
 
 ```css
     /* Compiled SASS to CSS
