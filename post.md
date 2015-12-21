@@ -74,11 +74,19 @@ This will be content that resides within the flow pages; like a sells listing po
 A flow specific item would be like a widget or something. For example, lets say that you are developing a twitter feed to have on the front of your web application that displays the latest in what is trending.
 
 ```css
-    /* Compiled SASS to CSS
-     * BREAKDOWN: f(flow) - Product(Name of the Overall idea)
+    /* 
+     * DECLARING: Proucts Page level
+     ************************************************************************ */
+     .f-products{
+        margin: 5px 0;
+        padding: 10px;
+        border: 1px solid $border_c0lor0;
+     }
+
+    /* BREAKDOWN: f(flow) - Product(Name of the Overall idea)
      * fm-tweet: initial parent (parent)
      ************************************************************************ */
-    .fm-product-tweets{
+    .fm-products-tweets{
         padding: 20px 10px;
         width: 66%;
         background: $brand_color;
