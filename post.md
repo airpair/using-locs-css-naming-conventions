@@ -75,20 +75,26 @@ A flow specific item would be like a widget or something. For exmaple, lets say 
 
 ```css
     /* Compiled SASS to CSS
-     * BREAKDOWN: f(flow) - Product(Name of the Overall idea) */
+     * BREAKDOWN: f(flow) - Product(Name of the Overall idea)
+     * fm-tweet: initial parent (parent)
+     ************************************************************************ */
     .fm-tweet{
         padding: 20px 10px;
         width: 66%;
         background: $brand_color;
     
-        /* Denoted with "_" to show it is a child of the "tweet" parent */
+        /* Denoted with "_" to show it is a child of the "tweet" parent
+         * _tweet-box0: direct decendant of parent (children)
+         ******************************************************************** */
         & ._tweet-box0{
             border: 1px solid $border_radius01;
             padding: 6px;
             box-sizing: border-box;
         }
         
-        /* Denoted with a "__" to show that is it nested of "box" */
+        /* Denoted with a "__" to show that is it nested of "box" 
+         * __box0-title: parent's direct decendant's child (grandchild)
+         ******************************************************************** */      
         & .__box0-title{
             color: $text_color01;
             font-size: $text_size01;
