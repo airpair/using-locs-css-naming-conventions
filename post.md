@@ -78,7 +78,7 @@ A flow specific item would be like a widget or something. For example, lets say 
      * BREAKDOWN: f(flow) - Product(Name of the Overall idea)
      * fm-tweet: initial parent (parent)
      ************************************************************************ */
-    .fm-tweet{
+    .fm-product-tweets{
         padding: 20px 10px;
         width: 66%;
         background: $brand_color;
