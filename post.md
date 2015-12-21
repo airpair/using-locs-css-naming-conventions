@@ -50,13 +50,13 @@ LOC has a simple set of rules to follow that allows developers to pick up quite 
 - A new feature class must always denote the level in which it is being invoked withing the markup; like is it global(g), flow specific(f), or flow-module(fm)
 - CSS/SCSS/LESS file structure needs to be broken out into partials resembling parent-level structure
 
-##### 4. Global Level:
+##### Global Level:
 Examples: navigation, sidemenu, content containers, layout boxes used across the site
 
-##### 5. Flow Specific: 
+##### Flow Specific: 
 Marketing pages, product listing pages, contact us, and etc...
 
-##### 6. Flow-Module:
+##### Flow-Module:
 This will be content that resides within the flow pages; like a sells listing popup that only exist on the product listing pages
 
 
@@ -70,7 +70,7 @@ This will be content that resides within the flow pages; like a sells listing po
     }
 ```
 
-#### Flow/ Module Specific Layout
+#### 4. Flow/ Module Specific Layout
 A flow specific item would be like a widget or something. For exmaple, lets say that you are developing a twitter feed to have on the front of your web application that displays the latest in what is trending.
 
 ```css
@@ -103,7 +103,7 @@ A flow specific item would be like a widget or something. For exmaple, lets say 
     }
 
 ```
-#### 7. HTML Preview of LOC
+#### 5. HTML Preview of LOC
 If you notice, inside of an HTML document you should be able to trace back to the parent, and know where the CSS group is written.
 
 ```
@@ -130,5 +130,5 @@ If you notice, inside of an HTML document you should be able to trace back to th
     </div>
 ```
 
-#### CSS Partial's File Structure
+#### 6. CSS Partial's File Structure
 Coming Soon..
