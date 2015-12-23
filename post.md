@@ -44,7 +44,7 @@ $layout_color04: #aaa;
 ```
 You will also will want to have a mixins file where you can reuse functions that are explicit to your application; like margins, padding, and creating widget bodies.
 
-#### 3. LOC Naming Conventions
+#### 3. LOC's Basic Ruleset
 LOC has a simple set of rules to follow that allows developers to pick up quite quickly to use.
 - A parent can only be applied 2 deep in HTML markup children; like parent -> direct decendant -> direct decendant's child. This helps cut down on the bulk and overuse of class tree fluff
 - A new class that isn't affiliated with the current structure that it is in must always declare the level in which it is being invoked withing the markup; like is it global(g), flow specific(f), or flow-module(fm).
@@ -74,7 +74,7 @@ This will be content that resides within the flow pages; like a sells listing po
 #### 4. Flow/ Module Specific Layout
 A flow specific item would be like a widget or something. For example, lets say that you are developing a twitter feed to have on the front of your web application that displays the latest in what is trending.
 
-```css
+```scss
     /* 
      * DECLARING: Proucts Page level
      ************************************************************************ */
