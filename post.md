@@ -1,5 +1,5 @@
 #### 1. Origin of LOC
-The main goal in any type of development is to have as much code as possible to be light weight, efficient, and reusable. CSS is a very unstructure language that allows one to create the exact same end piece through many different facets. As a result of CSS being so unstructured, many developers typically end up hitting a wall after creating months of unstructured style changes. To fix this, many have relied very heavily on popular css frameworks like Bootstrap, but still end up issues due to not having a standard in place when further developing. There are a lot of ideas out there on how to build your own internal framework for the UI, and how to integrate your own into a pre-exisitng one. I personally do not find it to be beneficial to create everything on your own, unless you have a standard in place. I know there are some methodologies out there for CSS like BEM, but honestly I kind of got tired of sorting through a massive amount of enterprise css framworks on consulting projects; so I came up with my own css naming convention called "LOC".
+The main goal in any type of development is to have as much code as possible to be light weight, efficient, and reusable. CSS is a very unstructured language that allows one to create the exact same end piece through many different facets. As a result of CSS being so unstructured, many developers typically end up hitting a wall after creating months of style changes. To fix this, many have relied very heavily on popular css frameworks like Bootstrap, but still end up issues due to not having a standard in place when further developing. There are a lot of ideas out there on how to build your own internal framework for the UI, and how to integrate your own into a pre-exisitng one. I personally do not find it to be beneficial to create everything on your own, unless you have a standard in place. I know there are some methodologies out there for CSS like BEM, but honestly I kind of got tired of sorting through a massive amount of enterprise css framworks on consulting projects; so I came up with my own css naming convention called "LOC".
 
 LOC stands for Level-Object-Component, and is a pretty flexible CSS naming convention. The benefit of LOC is where you can look at a template and know how the styles are being applied; like is it on a global scale or flow specific area. LOC helps resolve many common development team issues:
 
@@ -47,8 +47,9 @@ You will also will want to have a mixins file where you can reuse functions that
 #### 3. LOC Naming Conventions
 LOC has a simple set of rules to follow that allows developers to pick up quite quickly to use.
 - A parent can only be applied 2 deep in HTML markup children; like parent -> direct decendant -> direct decendant's child. This helps cut down on the bulk and overuse of class tree fluff
-- A new feature class must always denote the level in which it is being invoked withing the markup; like is it global(g), flow specific(f), or flow-module(fm)
+- A new class that isn't affiliated with the current structure that it is in must always declare the level in which it is being invoked withing the markup; like is it global(g), flow specific(f), or flow-module(fm).
 - CSS/SCSS/LESS file structure needs to be broken out into partials resembling parent-level structure
+- Classes from a group should not inherit other component styles from other groups in order to keep modularity.
 
 ##### Global Level:
 Examples: navigation, sidemenu, content containers, layout boxes used across the site
